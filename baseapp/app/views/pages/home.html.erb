@@ -1,0 +1,17 @@
+<h1>Pages</h1>
+<p>The meaning of life is <%= @meaning_of_life %></p>
+
+<br><hr>
+<%= month_calendar do |date| %>
+    <%= date %>
+<% end %>
+
+<br><hr>
+<%= week_calendar number_of_weeks: 2 do |date| %>
+  <%= date %>
+<% end %>
+
+<br><hr>
+<%= calendar number_of_days: 4 do |date| %>
+    <%= date %>
+  <% end %>
